@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pepe the Accessories</title>
+        <link href="style.css" rel="stylesheet" />
+        <link href="productdelivery.css" rel="stylesheet"/>
+    </head>
+    
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="Pepe_logo(2).png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="product.html">PRODUCT</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="payment.html">Payment</a></li>
+                        <li><a href="customerfeedback.html">Customer feedback</a></li>
+                        <li><a href="productdelivery.html">Product Delivery</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li class="cart">
+                            <a href="cart.html">
+                                <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+<form action="submitted2.html">
+    <fieldset>
+        <p><strong>Shipping Address</strong></p>
+        </br>
+        <div class="container1">
+            <label for="fname">First&nbsp;Name&nbsp;: </label>
+            <input name="fname" id="fname" type="text" placeholder="Jonathan" size="100" required/>
+        </div>
+    </br>    
+        <div class="container1">
+            <label for="lname">Last&nbsp;Name&nbsp;: </label>
+            <input name="lname" id="lname" type="text" placeholder="Yap" size="100" required />
+        </div>
+    </br>          
+        <div class="container1">
+            <label for="phoneno">Phone number&nbsp;:</label>
+            <input name="phoneno" id="phoneno" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter in format (123-456-7890)" size="95" required />
+        </div>
+    </br>     
+        <div class="container1">
+            <label for="adresss">Address&nbsp;:</span>
+            <input name="adresss" id="adresss" type="text" placeholder="your address" size="103" required/>
+        </div>
+    </br>     
+        <div class="container1">
+            <label for="cityy">City&nbsp;:</label>
+            <input name="cityy" id="cityy" type="text" placeholder="your city" size="108" required/>
+        </div>
+    </br> 
+        <div class="container1">
+            <label for="statee">State&nbsp;:</label>
+            <input name="statee" id="statee" type="text" placeholder="your state" size="106" required/>
+        </div>
+    </br>     
+        <div class="container1">
+            <label for="zipp">Zip&nbsp;Code&nbsp;:</label>
+            <input name="zipp" id="zipp" type="text" placeholder="00000" maxlength="5" pattern="^\d{5}$" title="5 number zip code" size="5" required />
+        </div>
+    </br>
+        <div class="submit">
+            <input type="submit" value="Submit" />
+        </div>
+    </fieldset>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>    
+</body>
+
+<footer>
+    <section class="footer">
+        <a href="About_us.html" style="text-decoration: none">
+            <h4>About us</h4>
+            <p>Pepe the Accessories originated in 2022 by Jonathan Yap and his friends<br>
+            </p>
+            <div class="icons">
+                <img src="Web Social Media icon.png" alt="NANI" />
+            </div>
+            <p>Made With Love By Jonathan To Pepe Team</p>
+        </a>
+    </section>
+</footer>
+
+</html>

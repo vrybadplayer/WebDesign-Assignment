@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Web Design assignment
+    Part: Payment
+    Author:Low Jing Hong -->
+
+    <meta charset="utf-8"/>
+
+    <title>Payment</title>
+
+    <link href="style.css" rel="stylesheet" />
+    <link href="payment.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Pepe_logo(2).png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="product.html">PRODUCT</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                    <li><a href="customerfeedback.html">Customer feedback</a></li>
+                    <li><a href="productdelivery.html">Product Delivery</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li class="cart">
+                        <a href="cart.html">
+                            <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <header>
+        <img style="width:100%; object-fit:cover; height:150px;" src="https://cdn.shopify.com/s/files/1/0281/3837/3173/files/dressbarn_Rich_Media_Blog_2_Types_of_Accessories_Header_600x600.jpg?v=1629829475" alt="accessories"/>
+    </header>
+<fieldset>
+
+<legend id="top1">&nbsp;Billing&nbsp;&nbsp;Address&nbsp;&nbsp;and&nbsp;&nbsp;
+              Payment&nbsp;&nbsp;Details&nbsp;</legend>
+
+<form action="productdelivery.html">
+    <fieldset>
+
+    <h2 id="top2">Personal&nbsp;&nbsp;Details</h2>
+
+    <div class="container1">
+        <label for="fname">First&nbsp;Name&nbsp;: </label>
+        <input name="fname" id="fname" type="text" placeholder="The" required/>
+    </div>
+
+    <div class="container1">
+        <label for="lname">Last&nbsp;Name&nbsp;: </label>
+        <input name="lname" id="lname" type="text" placeholder="Rockk" required/>
+    </div>
+
+    <div class="container1">
+        <label for="emaill">E-mail&nbsp;:</label>
+        <input name="emaill" id="emaill" type="e-mail" placeholder="example@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+        title="Enter in format (example@email.com)"required/>
+    </div>
+
+    <div class="container1">
+        <label for="phoneno">Phone number&nbsp;:</label>
+        <input name="phoneno" id="phoneno" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter in format (123-456-7890)" required />
+    </div>
+
+    <div class="container1">
+        <label for="adresss">Address&nbsp;:</span>
+        <input name="adresss" id="adresss" type="text" placeholder="your address" required/>
+    </div>
+
+    <div class="container1">
+        <label for="cityy">City&nbsp;:</label>
+        <input name="cityy" id="cityy" type="text" placeholder="your city" required/>
+    </div>
+
+    <div class="container1">
+        <label for="statee">State&nbsp;:</label>
+        <input name="statee" id="statee" type="text" placeholder="your state" required/>
+    </div>
+
+    <div class="container1">
+        <label for="zipp">Zip&nbsp;Code&nbsp;:</label>
+        <input name="zipp" id="zipp" type="text" placeholder="00000" maxlength="5" pattern="^\d{5}$" title="5 number zip code" required />
+    </div>
+
+    </fieldset>
+
+<fieldset>
+
+<h2 id="top2">Card&nbsp;&nbsp;Details</h2>
+
+<img style="height:60px" src="Screenshot 2022-09-16 165221.png" alt="Credit cards"/>
+
+<div>
+    <input type="radio" name="creditcard" id="maybank" value="maybank" checked/>
+    <input type="radio" name="creditcard" id="cimbbank" value="cimbbank"/>
+    <input type="radio" name="creditcard" id="publicbank" value="publicbank"/>
+    <input type="radio" name="creditcard" id="rhbbank" value="rhbbank" />
+ </div>
+
+
+    <div class="container1">
+        <label for="cardholder">Card&nbsp;Holder&nbsp;:</label>
+        <input name="cardholder" id="cardholder" type="text" placeholder="Mr.Rockkk" required/>
+    </div>
+
+    <div class="container1">
+        <label for="cardno">Card&nbsp;Number&nbsp;:</label>
+        <input name="cardno" id="cardno" type="text" maxlength="19" placeholder="xxxx-xxxx-xxxx-xxxx" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" title="Enter in format (xxxx-xxxx-xxxx-xxxx)" required/>
+    </div>
+
+    <div class="container1">
+        <label for="month">Exp&nbsp;Month&nbsp;:</label>
+        <select name="month" id="month" required>
+            <option value="01" selected>January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>    
+        </select>
+    </div>
+
+    <div class="container1">
+        <label for="year">Exp&nbsp;Year&nbsp;:</label>
+        <select name="year" id="year" required>
+            <option value="2022" selected>2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+        </select>
+    </div>
+
+    <div class="container1">
+        <label for="cvv">CVV&nbsp;:</label>
+        <input name="cvv" id="cvv" type="text" maxlength="4" placeholder="1234" pattern="[0-9]{4}" title="Enter 4 CVV number" required/>
+    </div></br>
+
+</fieldset>
+
+<input style="margin:5px 10%" type="submit" value="submit" class="submitbtn"/>
+
+</fieldset>
+
+</form> 
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+<footer>
+    <section class="footer">
+        <a href="About_us.html" style="text-decoration: none">
+            <h4>About us</h4>
+            <p>Pepe the Accessories originated in 2022 by Jonathan Yap and his friends<br>
+            </p>
+            <div class="icons">
+                <img src="Web Social Media icon.png" alt="NANI" />
+            </div>
+            <p>Made With Love By Jonathan To Pepe Team</p>
+        </a>
+    </section>
+</footer>
+
+</html>

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-image: url(product_background.jpg);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("The_Great_Pepe.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;    
+}
+
+nav{
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #008a60;
+    display: block;
+    margin: auto;
+    bottom: -10px;
+    transition:0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+body > header{
+    min-width: 740px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > fieldset {
+    width: 95%;
+    min-width: 740px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+#top1 {
+    color: yellow;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration:underline;
+    font-weight:70px;
+    font-size:35px;
+    
+}
+
+#top2{
+    color: yellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:large;
+    text-decoration: underline overline;
+}
+
+.container1 {
+    margin-top:15px;
+    color: yellow;
+}
+
+.container1 span{
+    display:block;
+    color:black;
+    padding-bottom:8px;
+    
+}
+
+.container1 input, .container select {
+    width:85%;
+    padding:8px;
+    color:#443;
+}
+
+.submitbtn{
+    width:80%;
+    color:#443;
+    font-size:18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-variant:small-caps;
+}
+
+body fieldset {
+    margin:8px auto;
+}
+
+input[type=text],input[type=e-mail],input[type=tel],select{
+    width: 100%;
+    padding: 13px 14px;
+    margin: 10px 5px;
+    border: 3px solid #ccc;
+    border-radius:45px 25px;
+    box-sizing: border-box;
+}
+
+input[type=radio] {
+    margin:3px 33px;
+}
+
+input:focus,select:focus{
+    background-color:rgb(220,255,220);
+}
+
+input#fname:focus:valid,
+input#lname:focus:valid,
+input#phoneno:focus:valid,
+input#emaill:focus:valid,
+input#adresss:focus:valid,
+input#statee:focus:valid,
+input#zipp:focus:valid,
+input#cityy:focus:valid{
+
+   background: rgb(220,255,220) url(Screenshot\ 2022-09-16\ 185851.png) right/contain no-repeat;
+
+}
+
+input#fname:focus:invalid,
+input#lname:focus:invalid,
+input#phoneno:focus:invalid,
+input#emaill:focus:invalid,
+input#adresss:focus:invalid,
+input#zipp:focus:invalid,
+input#cityy:focus:invalid,
+input#statee:focus:invalid{
+
+   background: rgb(255,232,232) url(Screenshot\ 2022-09-16\ 190014.png) right/contain no-repeat;
+
+}
+
+input#cardholder:focus:valid,
+input#cardno:focus:valid,
+input#cvv:focus:valid{
+    
+   background: rgb(220,255,220) url(Screenshot\ 2022-09-16\ 185851.png.png) right/contain no-repeat;
+
+}
+
+input#cardholder:focus:invalid,
+input#cardno:focus:invalid,
+input#cvv:focus:invalid{
+
+   background: rgb(255,232,232) url(Screenshot\ 2022-09-16\ 190014.png) right/contain no-repeat;
+
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgba(109, 184, 94, 0.9);
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: rgba(109, 184, 94, 0.9);
+}

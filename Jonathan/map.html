@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PEPE THE ACCESSORIES</title>
+        <link href="style.css" rel="stylesheet" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        </style>
+    </head>
+    <body class="aboutus">
+        <section class="sub-header">
+            <header>
+                <nav>
+                    <a href="index.html"><img src="Pepe_logo(2).png"></a>
+                    <div class="nav-links" id="navLinks">
+                        <ion-icon class="testing111" name="basket" onclick="hideMenu()"></ion-icon>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="product.html">PRODUCT</a></li>
+                            <li><a href="membership.html">Membership</a></li>
+                            <li><a href="payment.html">Payment</a></li>
+                            <li><a href="customerfeedback.html">Customer feedback</a></li>
+                            <li><a href="productdelivery.html">Product Delivery</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li class="cart">
+                                <a href="cart.html">
+                                    <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ion-icon class="testing111" name="basket" onclick="showMenu()"></ion-icon>
+                </nav>
+            </header>
+            <h1>BEST VERSION OF YOURSELF</h1>
+        </section>
+
+        <!--Best Version of Yourself (Map)-->
+
+        <section class="imageMap" >
+            <img src="Web Pepe Map (2).jpg" alt="NANI" usemap="#WebPepeMap2" height="600" width="900" />
+            <map name="WebPepeMap2">
+                <area shape="poly" coords="381,484,375,478,363,479,352,492,339,521,358,527,364,514,361,502,372,485" href="watches.html"/>
+                <area shape="rect" coords="447,239,503,442" href="ties.html" />
+                <area shape="poly" coords="406,106,447,113,451,98,597,98,600,156,451,155,446,125,409,117" href="glasses.html" />
+                <area shape="poly" coords="728,230,695,299,670,386,679,409,771,448,797,386,794,301,773,295,766,246" href="bags.html" />
+            </map>
+        </section>
+
+        <!-- Best Version Of Yourself (Map 2) -->
+
+        <section class="imageMap" >
+            <img src="Web Pepe Map (3).jpg" alt="NANI" usemap="#WebPepeMap3" height="900" width="900" />
+            <map name="WebPepeMap3">
+                <area shape="circle" coords="440,350,15" href="glasses.html" />
+                <area shape="circle" coords="471,352,15" href="glasses.html" />
+                <area shape="poly" coords="334,781,323,818,345,867,380,864,382,840,366,810,370,797" href="shoes.html"/>
+                <area shape="poly" coords="338,660,318,696,312,730,326,738,348,719,366,656" href="shoes.html"/>
+                <area shape="poly" coords="373,340,400,354,426,335,479,337,485,344,492,335,472,294,444,281,414,285,395,300" href="hats.html"/>
+            </map>
+        </section>
+
+        
+<!--Footer-->
+<footer>
+    <section class="footer">
+        <a href="About_us.html" style="text-decoration: none">
+            <h4>About us</h4>
+            <p>Pepe the Accessories originated in 2022 by Jonathan Yap and his friends<br>
+            </p>
+            <div class="icons">
+                <img src="Web Social Media icon.png" alt="NANI" />
+            </div>
+            <p>Made With Love By Jonathan To Pepe Team</p>
+        </a>
+    </section>
+</footer>
+
+<!--Javacript Toggle Menu-->
+
+        <script>
+            var navLinks = document.getElementsById("navLinks")
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        <script src="/util.js"></script>
+        <script src="main.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </body>
+</html>

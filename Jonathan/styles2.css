@@ -1,0 +1,160 @@
+@charset "utf-8";
+@font-face{
+    font-family: Nobile;
+    src: url("nobile-webfont.woff") format('woff'),
+         url("nobile-webfont.ttf") format('truetype');
+}
+
+html{
+    color:white;
+    background-image: url("The_Great_pepe.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body > div.navbar{
+    width: 110%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 30px;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+    position: relative;
+}
+
+body > div.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+body > div.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+body > div.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #008a60;
+    position: absolute;
+    left: 0;
+    bottom: -4px;   
+    transition: 0.5s;
+}
+
+body > div.navbar ul li:hover::after{
+    width: 100%;
+}
+
+body > div.content{
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #000000;
+}
+
+body > div.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+body > div.About_us_main_content p{
+    color: rgba(255, 255, 255, 0.507);
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 60px;
+}
+
+body > div > button.Home_center_button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span.home{
+    background: #008a60;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1; /* it will be placed behind something if z index is -1 */
+    transition: 0.8s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+p{
+    font-size: 20px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div.Name{
+   text-align: left;
+   font-size: 20px;
+   color: aqua;
+}
+
+div.phone {
+    text-align: left;
+    font-size: 20px;
+    color: aqua;
+}
+
+div.Location{
+    text-align: left;
+    font-size: 20px;
+    color: aqua;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgba(109, 184, 94, 0.9);
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: rgba(109, 184, 94, 0.9);
+}

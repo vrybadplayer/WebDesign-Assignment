@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-image: url(product_background.jpg);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("The_Great_Pepe.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;    
+}
+
+nav{
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #008a60;
+    display: block;
+    margin: auto;
+    bottom: -10px;
+    transition:0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+fieldset{
+    width: 95%;
+    min-width: 740px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset > h1 {
+    text-align: center;
+    color: yellow;
+}
+
+fieldset > p {
+    text-align: center;
+    color: yellow;
+}
+
+fieldset > form > div.name,
+fieldset > form > div.email, 
+fieldset > form > div.location, 
+fieldset > form > div.address, 
+fieldset > form > div.state, 
+fieldset > form > div.city,
+fieldset > form > div.postcode,
+fieldset > form > div.phone,
+fieldset > form > div.comment,
+fieldset > form > div.privacypolicy,
+fieldset > form > div.submit{
+    text-align: center;
+    color: yellow;
+}
+
+input.name:focus:valid, input.phone:focus:valid{
+    background: rgb(220,255,220) url(rb_okay.png) right/contain no-repeat;
+}
+
+input.name:focus:invalid, input.phone:focus:invalid{
+    background: rgb(255,230,230) url(rb_warning.png) right/contain no-repeat;
+}
+
+input:focus{
+    background-color:rgb(220,255,220);
+}
+
+input#name:focus:valid,
+input#email:focus:valid,
+input#location:focus:valid,
+input#address:focus:valid,
+input#city:focus:valid,
+input#postcode:focus:valid,
+input#phone:focus:valid{
+
+   background: rgb(220,255,220) url(Screenshot\ 2022-09-16\ 185851.png) right/contain no-repeat;
+
+}
+
+input#name:focus:invalid,
+input#email:focus:invalid,
+input#location:focus:invalid,
+input#address:focus:invalid,
+input#city:focus:invalid,
+input#postcode:focus:invalid,
+input#phone:focus:invalid{
+
+   background: rgb(255,232,232) url(Screenshot\ 2022-09-16\ 190014.png) right/contain no-repeat;
+
+}
+
+.submitbutton{
+    text-align: center;
+    width:80%;
+    color:#443;
+    font-size:18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-variant:small-caps;
+}
+
+input[type=text],input[type=tel],input[type=postcode],input[type=city],input[type=address],input[type=email],input[type=name],select{
+    width: 95%;
+    padding: 13px 14px;
+    margin: 10px 5px;
+    border: 3px solid #ccc;
+    border-radius:15px 15px;
+    box-sizing: border-box;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgba(109, 184, 94, 0.9);
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: rgba(109, 184, 94, 0.9);
+}

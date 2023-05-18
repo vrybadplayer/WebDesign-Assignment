@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-image: url(product_background.jpg);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    max-height: 280px;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("The_Great_Pepe.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;    
+}
+
+nav{
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #008a60;
+    display: block;
+    margin: auto;
+    bottom: -10px;
+    transition:0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.product-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+
+.product-title{
+    width: 45%;
+    color: yellow;
+}
+
+.price{
+    width: 15%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    color: yellow;
+}
+
+.quantity{
+    width: 30%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    color: yellow;
+}
+
+.total{
+    width: 10%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    color: yellow;
+}
+
+.product{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+    color: yellow;
+}
+
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+    color: yellow;
+}
+
+.basketTotalTittle{
+    width: 30%;
+}
+
+.basketTotal{
+    width: 10%;
+}
+
+.continue{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.products{
+    width: 240px;
+    height: 240px;
+}
+
+/* IMAGES */
+
+
+div.products img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* PRICES, TAGS, INCART */
+div.products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+div.basketTotalContainer {
+    width: 100%;
+    margin-left: 245%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+div.continue {
+    width: 100%;
+    margin-left: 275%;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgba(109, 184, 94, 0.9);
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: rgba(109, 184, 94, 0.9);
+}
+
+.footer p{
+    color: rgba(109, 184, 94, 0.9);
+}

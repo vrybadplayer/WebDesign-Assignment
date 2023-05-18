@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-image: url(product_background.jpg);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    color: white;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("The_Great_Pepe.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;    
+}
+
+nav{
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #008a60;
+    display: block;
+    margin: auto;
+    bottom: -10px;
+    transition:0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+body > div.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #000000;
+}
+
+body > div.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+body > div.About_us_main_content p{
+    color: rgba(255, 255, 255, 0.507);
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 60px;
+}
+
+body > div > button.Home_center_button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+body > section.faqpart > ul.faq_opt_cat{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body > section.faqpart > ul.faq_opt_cat li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+body > section.faqpart > ul.faq_opt_cat li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+body > section.faqpart > ul.faq_opt_cat li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #008a60;
+    position: absolute;
+    left: 0;
+    bottom: -10px;   
+    transition: 0.5s;
+}
+
+body > section.faqpart > ul.faq_opt_cat li:hover::after{
+    width: 100%;
+}
+
+div.faqitems{
+   text-align: center;
+}
+
+div.faqtext{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.faqpic{
+    background-color: #f1f1f1;
+    width: 5%;
+}
+
+div.ques{
+    width: 98%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: none;
+}
+
+.linktomember{
+ color:#008a60;
+}
+
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgba(109, 184, 94, 0.9);
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: rgba(109, 184, 94, 0.9);
+}
+
+
+.footer p{
+    color: rgba(109, 184, 94, 0.9);
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background: #008a60; 
+    transition: 1s;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+ .faqcontent {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+ .faqtext {
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  /* Links inside the dropdown */
+  .faqtext p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .faqtext p:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}

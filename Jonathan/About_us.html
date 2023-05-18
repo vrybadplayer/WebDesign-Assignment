@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PEPE THE ACCESSORIES</title>
+        <link href="style.css" rel="stylesheet" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        </style>
+    </head>
+    <body class="aboutus">
+        <section class="sub-header">
+            <header>
+                <nav>
+                    <a href="index.html"><img src="Pepe_logo(2).png"></a>
+                    <div class="nav-links" id="navLinks">
+                        <ion-icon class="testing111" name="basket" onclick="hideMenu()"></ion-icon>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="product.html">PRODUCT</a></li>
+                            <li><a href="membership.html">Membership</a></li>
+                            <li><a href="payment.html">Payment</a></li>
+                            <li><a href="customerfeedback.html">Customer feedback</a></li>
+                            <li><a href="productdelivery.html">Product Delivery</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li class="cart">
+                                <a href="cart.html">
+                                    <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ion-icon class="testing111" name="basket" onclick="showMenu()"></ion-icon>
+                </nav>
+            </header>
+            <h1>About Us</h1>
+        </section>
+
+        <!--About us-->
+        
+        <section>
+            <div class="centervideo">
+            <video height="500" width="800" controls autoplay loop poster="The_Great_Pepe.png">
+                <source src="promo.mp4" type="video/mp4" />
+             </video>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We Are The Best Accessories PEPE</h1>
+                    <p>Pepe the Accessories is an AMAZING BRAND and are well known accessories brand in Mars<br>
+                        Pepe the Accessories originated in 2022 by Jonathan Yap and his friends<br>
+                        It became an AMAZING BRAND and its popularity steadily grew across multiple platforms such as YOUTUBE, TIKTOK, INSTAGRAM, FACEBOOK AND MANY MORE<br>
+                        it had become one of the most popular BRAND in Accessories field that our organization almost monopoly the whole Accessories Market. <br>
+                        We offer different kinds of amazing Accessories such as "Hats Frog" , "Shoes Frog" , "Watch Frog" , "Tie Frog" , "Bag Frog" , "Glasses Frog"<br>
+                        Since 2022, Pepe the Accessories have been posted on the market on MARS<br>
+                    </p>
+                    <a href="index.html#first" class="hero-btn black-btn" >EXPLORE NOW</a>
+                </div>
+                <div class="about-col" >
+                    <img src="Web Pepe Feels Good Man.png" alt="NANI" />
+                </div>
+            </div>
+        </section>
+
+
+<!--Footer-->
+        <footer>
+            <section class="footer">
+                <a href="About_us.html" style="text-decoration: none">
+                    <h4>About us</h4>
+                    <p>Pepe the Accessories originated in 2022 by Jonathan Yap and his friends<br>
+                    </p>
+                    <div class="icons">
+                        <img src="Web Social Media icon.png" alt="NANI" />
+                    </div>
+                    <p>Made With Love By Jonathan To Pepe Team</p>
+                </a>
+            </section>
+        </footer>
+
+
+
+<!--Javacript Toggle Menu-->
+
+        <script>
+            var navLinks = document.getElementsById("navLinks")
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="ties.js"></script>
+        <script src="main.js"></script>
+
+    </body>
+</html>

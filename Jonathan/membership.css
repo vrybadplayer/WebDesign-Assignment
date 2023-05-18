@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-image: url(product_background.jpg);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("The_Great_Pepe.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;    
+}
+
+nav{
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #008a60;
+    display: block;
+    margin: auto;
+    bottom: -10px;
+    transition:0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+body {
+    background-color:white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.register1 > a {
+    font-size:xlarge;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:18px 23px;
+    background-color:black;
+    color:white;
+    text-decoration:none;
+    position:relative;
+    border: 2px solid #fff;
+    left:45%;
+    top:18px;
+}
+
+.paragraph1{
+    font-size:large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:16px;
+    letter-spacing:4px;
+    font-weight:bold;
+    padding-top:10px;
+    color: yellow;
+}
+
+.paragraph2{
+    font-size:medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left:16px;
+    word-spacing:3px;
+    line-height:2em;
+    color: yellow;
+}
+
+header{
+    color: yellow;
+    font-family:'Courier New', Courier, monospace;
+    font-size:45px;
+    font-variant:small-caps;
+    text-align:left;
+    padding-left:35px;
+    padding-top:35px;
+    font-weight:bold;
+}
+
+h1{
+    color: yellow;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:xx-large;
+    text-align:center;
+    margin-top:50px;
+
+}
+
+h2{
+    color: yellow;
+}
+
+/* table */
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(221, 240, 230);
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers thead , tfoot {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    text-decoration: none;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgba(109, 184, 94, 0.9);
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: rgba(109, 184, 94, 0.9);
+}
+
+.footer p{
+    text-decoration: none;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pepe the Accessories</title>
+        <link href="style.css" rel="stylesheet" />
+        <link href="customerfeedback.css" rel="stylesheet"/>
+        <link href="submited.html" rel="">
+    </head>
+    
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="Pepe_logo(2).png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="product.html">PRODUCT</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="payment.html">Payment</a></li>
+                        <li><a href="customerfeedback.html">Customer feedback</a></li>
+                        <li><a href="productdelivery.html">Product Delivery</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li class="cart">
+                            <a href="cart.html">
+                                <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+    <fieldset>
+            <h1><strong>Customer Feedback</strong></h1>
+            <p>We value your comments and suggestions.</p>
+            <p>Every submission is reviewved by a person and,if you provide your email address,responded to promptly.</p>
+    </br>
+        <form action="submitted.html">
+        <div class="name">
+            <label for="name">Enter your name :</label>
+            <input type="name" placeholder="Jonathan Yap" id="name" name="name" text="type" required />
+        </div>
+        
+    </br>
+        <div class="email">
+            <label for="email">Enter your email:</label>
+            <input type="email" placeholder="xxx@gmail.com" id="email" name="email" text="type" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+        </div>
+    </br>
+        <div class="location">
+            <label for="location">Location:</label>
+            <select id="location" name="location" form="location">
+            <option value="-Select Location-">-Select Location-</option>
+            <option value="Malaysia">Malaysia</option>
+        </div>
+    </select>
+    </br>
+    </br>
+        <div class="address">
+            <label for="address">Enter Address :</label>
+            <input type="address"  id="address" name="address" text="type" required />
+        </div>
+    </br>
+        <div class="state">
+            <label for="state">State:</label>
+            <select id="state" name="state" form="state">
+            <option value="-Select State-">-Select State-</option>
+            <option value="Johor">Johor</option>
+            <option value="Kedah">Kedah</option>
+            <option value="Kelantan">Kelantan</option>
+            <option value="Malacca">Malacca</option>
+            <option value="Negeri Sembilan">Negeri Sembilan</option>
+            <option value="Pahang">Pahang</option>
+            <option value="Penang">Penang</option>
+            <option value="Perak">Perak</option>
+            <option value="Perlis">Perlis</option>
+            <option value="Sarawak">Sarawak</option>
+            <option value="Selangor">Selangor</option>
+            <option value="Terengganu">Terengganu</option>
+            <option value="Kuala Lumpur">Kuala Lumpur</option>
+            <option value="Labuan">Labuan</option>
+            <option value="Putrajaya">Putrajaya</option>
+        </select>
+        </div> 
+    </br>
+        <div class="city">
+            <label for="city">Enter your city :</label>
+            <input type="city"  id="city" name="city" text="type" required />
+        </div>
+    </br>
+        <div class="postcode">
+            <label for="postcode">Enter your postcode :</label>
+            <input type="postcode" id="postcode" name="postcode" text="type" placeholder="00000" maxlength="5" pattern="^\d{5}$" required />
+        </div>
+    </br>           
+        <div class="phone">
+            <label for="phone">Enter your phone number :</label>
+            <input name="phone" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter in format (123-456-7890)" required />
+        </div>
+    <br />
+        <div class="comment">
+            <label for="comment">Comment:</label>
+    <br />
+            <textarea name="comment" id="commnet" placeholder="Leave your comment at here" rows="10" cols="100"></textarea>
+        </div>
+        <div class="privacypolicy">
+    <br/>
+            <input type="checkbox" id="privacypolicy" name="privacypolicy" value="privacypolicy" required>
+            <label for="privacypolicy">I have read and understood the Privacy Policy</label>
+        </div>
+    <br />
+        <div class="submit">
+            <input type="submit" value="Submit" />
+        </div>
+        </form>
+    </fieldset>  
+     
+    </body>
+
+    <footer>
+        <section class="footer">
+            <a href="About_us.html" style="text-decoration: none">
+                <h4>About us</h4>
+                <p>Pepe the Accessories originated in 2022 by Jonathan Yap and his friends<br>
+                </p>
+                <div class="icons">
+                    <img src="Web Social Media icon.png" alt="NANI" />
+                </div>
+                <p>Made With Love By Jonathan To Pepe Team</p>
+            </a>
+        </section>
+    </footer>
+    
+</html>

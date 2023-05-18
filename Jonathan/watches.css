@@ -1,0 +1,242 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-image: url(product_background.jpg);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("The_Great_Pepe.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;    
+}
+
+nav{
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #008a60;
+    display: block;
+    margin: auto;
+    bottom: -10px;
+    transition:0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* Products HTML Page CSS */
+
+h1 {
+    font-size: 6.5em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+    font-style: italic;
+    color: rgb(109, 184, 94);
+}
+
+
+
+/* Products banner */
+body > img.product_banner {
+    display: block;
+    margin: auto;
+    width: 70%;
+    border: 2px solid  rgb(109, 184, 94);
+}
+
+/* Paragraph */
+p.instructions {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4ch;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(109, 184, 94);
+}
+
+
+
+
+/* Products Div Style */
+
+.watch1, .watch2, .watch3, .watch4, .watch5, .watch6 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+div.aaa {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+    clear: both;
+
+}
+
+
+div.bbb {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+}
+
+div.ccc {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+}
+
+
+div.aaa > a , div.bbb > a, div.ccc > a {
+    width: 25%;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+
+/* position of product names  */
+
+div.first {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    clear: both;
+    font-size: 2.3vw;
+    width: 55%;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 22%;
+    color: rgb(109, 184, 94);
+}
+
+
+div.second {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    clear: both;
+    font-size: 2.3vw;
+    width: 55%;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 24%;
+    color: rgb(109, 184, 94);
+}
+
+div.third {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    clear: both;
+    font-size: 2.3vw;
+    width: 55%;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 22.5%;
+    color: rgb(109, 184, 94);
+}
+
+
+div > p.ChronographWatches {
+    padding-left: 60%;
+}
+
+div > p.Solarwatches {
+    padding-left: 50%;
+}
+
+div > p.DigitalWatches {
+    padding-left: 55%;
+}
+
+
+/* animation style */
+
+
+.watch1, .watch2, .watch3, .watch4, .watch5, .watch6 {
+    transition: 1s;
+}
+
+.watch1:hover, .watch2:hover, .watch3:hover, .watch4:hover, .watch5:hover, .watch6:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgba(109, 184, 94, 0.9);
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: rgba(109, 184, 94, 0.9);
+}
+
+.footer p{
+    color: rgba(109, 184, 94, 0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
